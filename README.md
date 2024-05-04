@@ -1,6 +1,30 @@
 # Assignment link
 
-# [link] ('https://docs.google.com/document/d/10D4zvsMLwNc8G3p-D1-PujdHR5hGoZ1pfDrZ3MtUJws/edit#heading=h.hhevn0icya3z')
+
+# Steps to Setup the project
+
+* 1. Clone the project repo from github by copying this command and paste in the terminal
+
+```
+git clone https://github.com/Devanshkanda/assignmentt.git
+
+```
+
+* CD into the project folder and install dependencies using the requirements.txt file
+
+```
+pip3 install -r requirements.txt
+```
+
+* then cd into src folder and run this command
+
+```
+uvicorn main:app
+```
+
+* the application will start running on localhost at port 8000
+
+## Now Hit the endpoint to fetch details
 
 
 # API's For fetching Bank details
@@ -205,6 +229,8 @@ if no details found then the response is:
 
 ```
 
+![alt text](image.png)
+
 
 ### 2. To Fetch Bank's Specific Branch Details
 
@@ -236,6 +262,7 @@ Response Body
   }
 }
 
+
 if IFSC Code entered wrong then response is:
 
 
@@ -246,3 +273,6 @@ if IFSC Code entered wrong then response is:
   }
 }
 ```
+
+
+![alt text](image-2.png)
